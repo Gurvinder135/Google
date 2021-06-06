@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Google</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+            overflow: hidden;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        #img img {
+            display: block;
+            width: 279px;
+            margin: 91px auto 28px;
+
+        }
+
+        a {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        .box {
+            margin: 10px;
+        }
+
+        .box a {
+            text-decoration: none;
+            border-radius: 7px;
+            background-color: rgba(239, 237, 237, 0.57);
+            color: #5b5a5a;
+            padding: 11px;
+            border: 1px solid transparent;
+        }
+
+        #container {
+            display: flex;
+            justify-content: center;
+
+
+        }
+
+        #item1:hover,
+        #item2:hover,
+        #item-1:hover,
+        #item-2:hover,
+        #footer2:hover,
+        #footer3:hover,
+        #footer4:hover,
+        #footer5:hover,
+        #footer6:hover,
+        #footer7:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        #item-3:hover {
+            cursor: pointer;
+            background-color: #80808021;
+            border-radius: 15px;
+            padding-top: 3px;
+        }
+
+        #item-3 {
+            background-color: transparent;
+            border-radius: 56px;
+padding-left: 7px;
+padding-right: 7px;
+padding-top: 3px;
+        }
+
+        #action {
+            position: relative;
+            display: block;
+            width: 596px;
+            margin: 18px auto;
+            border-radius: 24px;
+        }
+
+        #input {
+            height: 38px;
+            padding: 2px 50px;
+            border-radius: 30px;
+            border-color: #5f5b5b21;
+            width: 471px;
+        }
+
+
+        #search {
+            position: absolute;
+            width: 25px;
+            top: 11px;
+            left: 15px;
+        }
+
+        #mic {
+            position: absolute;
+            width: 25px;
+            top: 10px;
+            right: 36px;
+        }
+
+        #input:hover {
+            box-shadow: 0px 0px 2px rgba(114, 111, 111, 0.8);
+        }
+
+        #hover0 a:hover {
+            color: #484745;
+            border: 1px solid #00000052;
+        }
+
+        #hover1 a:hover {
+            color: #484745;
+            border: 1px solid #00000052;
+        }
+
+        .main {
+            display: flex;
+            justify-content: space-between;
+            margin-left: -23px;
+            margin-top: -3px;
+            margin-right: 19px;
+
+        }
+
+        .nav1,
+        .nav2 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .nav1 {
+            width: 95px;
+        }
+
+        .nav2 {
+            width: 192px
+        }
+
+        .just {
+            text-decoration: none;
+            list-style-type: none;
+            color: #4c4a4a;
+        }
+
+        #item-4 img {
+            width: 30px;
+            border-radius: 15px;
+            margin-top: -2px;
+            margin-left: -16px;
+            margin-right: 9px;
+
+        }
+
+        .footer {
+
+            color: #0000008c;
+            background-color: #efefef;
+            padding: 15px 29px;
+            list-style: none;
+            font-size: 14px;
+        }
+
+        .footer-container {
+            display: grid;
+            position: fixed;
+            bottom: 0px;
+            right: 0px;
+            margin-left: -47px;
+            width: 100%;
+            margin-top: 255px;
+            grid-template-columns: 1fr 1fr 9fr 1fr 1fr 1fr;
+            grid-template-areas: "footer1 footer1 footer1 footer1 footer1 footer1""footer2 footer3 footer4 footer5 footer6 footer7";
+            background-color: #00000038;
+            row-gap: 1px;
+            margin-bottom: 0vh;
+
+        }
+
+        #footer1 {
+            grid-area: footer1;
+        }
+
+        #footer2 {
+            grid-area: footer2;
+        }
+
+        #footer3 {
+            grid-area: footer3;
+        }
+
+        #footer4 {
+            grid-area: footer4;
+        }
+
+        #footer5 {
+            grid-area: footer5;
+        }
+
+        #footer6 {
+            grid-area: footer6;
+        }
+
+        #footer7 {
+            grid-area: footer7;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <ul class="nav1 just">
+            <li id="item1"><a class="just" href="#">About</a></li>
+            <li id="item2"><a class="just" href="#">Store</a></li>
+        </ul>
+        <ul class="nav2 just">
+            <li id="item-1"><a class="just" href="#">Gmail</a></li>
+            <li id="item-2"><a class="just" href="#">Images</a></li>
+            <li id="item-3"><a class="just" href="#"><img src="app.png" alt=""></li>
+            <li id="item-4"><a class="just" href="#"><img src="avatar.png" alt=""></a></li>
+        </ul>
+    </div>
+
+    <div id="img"><img src="logo.png" alt=""></div>
+    <form action="" id="action">
+        <input type="text" id="input">
+        <img id="search" src="search.png" alt="">
+        <img id="mic" src="mic.png" alt="">
+    </form>
+    <div id="container">
+        <div class="box" id="hover0"><a href="#">Google Search</a></div>
+        <div class="box" id="hover1"><a href="#">I'm Feeling Lucky</a></div>
+
+    </div>
+
+    <div class="foot-div">
+        <ul class="footer-container">
+            <li class="footer" id="footer1">Canada</li>
+            <li class="footer" id="footer2">Advertising</li>
+            <li class="footer" id="footer3">Business</li>
+            <li class="footer" id="footer4">How Search Works</li>
+            <li class="footer" id="footer5">Privacy</li>
+            <li class="footer" id="footer6">Terms</li>
+            <li class="footer" id="footer7">Settings</li>
+        </ul>
+    </div>
+</body>
+
+</html>
