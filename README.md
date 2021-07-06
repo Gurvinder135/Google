@@ -1,7 +1,9 @@
 
 # Google Search
 
-Welcome to my first project on Github. By using HTML and CSS, I created a copy of Google Search page. I deployed this project on Github Pages.
+Welcome to my first project on Github. By using HTML and CSS, I created a copy of Google Search page. 
+I haven't learned JavaScript yet so it is just a simple copy.  
+I deployed this project on Github Pages.
 
 
 ## Launch
